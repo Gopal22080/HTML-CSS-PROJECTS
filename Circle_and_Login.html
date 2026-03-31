@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCLE LOGIN FORM</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color:gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .circle{
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle,#4facfe,#00f2fe);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+        }
+        .form-box{
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 80%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-box input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }                       
+        .form-box button{
+            width: 100%;
+            padding: 10px;
+            background: #00c6ff;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .form-box button:hover{
+            background: #007acc;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <div class="form-box">
+        <h2>LOGIN</h2>
+        <input type="text" placeholder="Username"/>
+        <input type="text" placeholder="Password"/>
+        <button>LOGIN</button>
+    </div>
+</div>
+</body>
+</html>

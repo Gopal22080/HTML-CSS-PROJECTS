@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Animation</title>
+    <style>
+        body{
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 1000px;
+        }
+        .box{
+            width: 350px;
+            height: 350px;
+            background: transparent;
+            animation: spin3d 5s infinite linear;
+            transform-style: preserve-3d;
+            border-radius: 50%;
+            
+        }
+        @keyframes spin3d{
+            0%{
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                box-shadow: 0 0 45px red;
+                border: 10px solid red;
+                
+            }
+                100%{
+                    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                    box-shadow: 0 0 150px red;
+                    border: 10px solid red;
+                    
+                }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+       </div>
+</body>
+</html>
